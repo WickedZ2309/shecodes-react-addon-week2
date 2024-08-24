@@ -1,5 +1,13 @@
+body {
+  background: #f9f8fe;
+}
+
+a {
+  color: #9670f4;
+}
 .App {
-  text-align: center;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .App-header {
