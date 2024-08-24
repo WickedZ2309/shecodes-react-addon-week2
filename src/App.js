@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.png";
+import "./App.css";
+import Dictionary from "./Dictionary";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} className="App-logo img-fluid" alt="logo" />
       </header>
+      <main>
+        <Dictionary />
+      </main>
+      <footer className="App-footer">
+        <small>
+          This project was coded by{" "}
+          <a
+            href="https://github.com/WickedZ2309"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Andrea G.
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/WickedZ2309/shecodes-react-addon-week2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://shecodes-react-addon-week2-ag.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
+          .
+        </small>
+      </footer>
     </div>
   );
 }
-
-export default App;
